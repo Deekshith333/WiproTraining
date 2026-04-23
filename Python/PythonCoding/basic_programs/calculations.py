@@ -1,0 +1,11 @@
+#calculations pgm
+
+a=int(input('Enter a number : '))
+b=int(input('Enter another number : '))
+print('sum :',a+b)
+print('diff :',a-b)
+print('mul :',a*b)
+print('int div :',a//b)
+print('float div :',a/b)
+print('mod :',a%b)
+print('pow :',a**b)
