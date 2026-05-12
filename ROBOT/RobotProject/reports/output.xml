@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.14.4 on win32)" generated="2026-05-11T13:17:12.151692" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="C:\Wipro Training\Python\ROBOT\RobotProject\tests">
+<suite id="s1-s1" name="Signup" source="C:\Wipro Training\Python\ROBOT\RobotProject\tests\signup.robot">
+<test id="s1-s1-t1" name="Verify User Can Signup Successfully" line="5">
+<kw name="Open Demoblaze Application">
+<msg time="2026-05-11T13:17:12.252274" level="FAIL">No keyword with name 'Open Demoblaze Application' found.</msg>
+<status status="FAIL" start="2026-05-11T13:17:12.252151" elapsed="0.000294">No keyword with name 'Open Demoblaze Application' found.</status>
+</kw>
+<kw name="Click Signup Menu">
+<status status="NOT RUN" start="2026-05-11T13:17:12.252968" elapsed="0.000038"/>
+</kw>
+<kw name="Enter Signup Username">
+<status status="NOT RUN" start="2026-05-11T13:17:12.253389" elapsed="0.000030"/>
+</kw>
+<kw name="Enter Signup Password">
+<status status="NOT RUN" start="2026-05-11T13:17:12.253795" elapsed="0.000026"/>
+</kw>
+<kw name="Click Signup Button">
+<status status="NOT RUN" start="2026-05-11T13:17:12.254178" elapsed="0.000037"/>
+</kw>
+<kw name="Validate Signup Success Message">
+<status status="NOT RUN" start="2026-05-11T13:17:12.265000" elapsed="0.000039"/>
+</kw>
+<kw name="Close Application">
+<status status="NOT RUN" start="2026-05-11T13:17:12.265548" elapsed="0.000030"/>
+</kw>
+<status status="FAIL" start="2026-05-11T13:17:12.249475" elapsed="0.016609">No keyword with name 'Open Demoblaze Application' found.</status>
+</test>
+<status status="FAIL" start="2026-05-11T13:17:12.238181" elapsed="0.031956"/>
+</suite>
+<status status="FAIL" start="2026-05-11T13:17:12.153903" elapsed="0.126890"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Tests" id="s1" pass="0" fail="1" skip="0">Tests</stat>
+<stat name="Signup" id="s1-s1" pass="0" fail="1" skip="0">Tests.Signup</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2026-05-11T13:17:12.245840" level="WARN">Imported resource file 'C:\Wipro Training\Python\ROBOT\RobotProject\resources\keywords\signup_keywords.robot' is empty.</msg>
+</errors>
+</robot>

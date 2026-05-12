@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.14.4 on win32)" generated="2026-05-12T23:56:20.838436" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="C:\Wipro Training\Python\PythonCoding\daily_assignments\RobotProject\tests">
+<suite id="s1-s1" name="Invalid Login Test" source="C:\Wipro Training\Python\PythonCoding\daily_assignments\RobotProject\tests\invalid_login_test.robot">
+<kw name="Open Application" owner="login_resources" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-05-12T23:56:21.290692" level="INFO">Opening browser 'edge' to base url 'https://www.saucedemo.com'.</msg>
+<msg time="2026-05-12T23:56:21.492562" level="WARN">There was an error managing MicrosoftEdge (error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_148_WINDOWS): error trying to connect: dns error: No such host is known. (os error 11001)); using driver found in the cache</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-05-12T23:56:21.290358" elapsed="2.997622"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-05-12T23:56:24.372013" elapsed="0.135004"/>
+</kw>
+<status status="PASS" start="2026-05-12T23:56:21.289601" elapsed="3.217868"/>
+</kw>
+<test id="s1-s1-t1" name="Invalid Login Tests" line="10">
+<kw name="Invalid Login Scenario">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-05-12T23:56:24.521140" level="INFO">Typing text 'invalid_user' into text field 'id:user-name'.</msg>
+<arg>id:user-name</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-12T23:56:24.520493" elapsed="0.357090"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2026-05-12T23:56:24.880504" level="INFO">Typing password into text field 'id:password'.</msg>
+<msg time="2026-05-12T23:56:25.006223" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>id:password</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-12T23:56:24.879633" elapsed="0.332104"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-05-12T23:56:25.214755" level="INFO">Clicking button 'id:login-button'.</msg>
+<arg>id:login-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-12T23:56:25.214368" elapsed="0.184558"/>
+</kw>
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<msg time="2026-05-12T23:56:25.436860" level="INFO">Element 'xpath://h3[@data-test='error']' contains text 'Epic sadface: Username and password do not match any user in this service'.</msg>
+<arg>xpath://h3[@data-test='error']</arg>
+<arg>${error}</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="PASS" start="2026-05-12T23:56:25.400200" elapsed="0.036823"/>
+</kw>
+<kw name="Reload Page" owner="SeleniumLibrary">
+<doc>Simulates user reloading page.</doc>
+<status status="PASS" start="2026-05-12T23:56:25.438116" elapsed="0.348566"/>
+</kw>
+<arg>invalid_user</arg>
+<arg>wrongpass</arg>
+<arg>Epic sadface: Username and password do not match any user in this service</arg>
+<status status="PASS" start="2026-05-12T23:56:24.519933" elapsed="1.267165"/>
+</kw>
+<kw name="Invalid Login Scenario">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-05-12T23:56:25.791330" level="INFO">Typing text 'locked_out_user' into text field 'id:user-name'.</msg>
+<arg>id:user-name</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-12T23:56:25.790977" elapsed="0.462189"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2026-05-12T23:56:26.384058" level="INFO">Typing password into text field 'id:password'.</msg>
+<msg time="2026-05-12T23:56:26.428537" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>id:password</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-12T23:56:26.383459" elapsed="0.110722"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-05-12T23:56:26.497224" level="INFO">Clicking button 'id:login-button'.</msg>
+<arg>id:login-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-12T23:56:26.496477" elapsed="0.086882"/>
+</kw>
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<msg time="2026-05-12T23:56:26.602216" level="INFO">Element 'xpath://h3[@data-test='error']' contains text 'Epic sadface: Sorry, this user has been locked out.'.</msg>
+<arg>xpath://h3[@data-test='error']</arg>
+<arg>${error}</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="PASS" start="2026-05-12T23:56:26.584586" elapsed="0.017723"/>
+</kw>
+<kw name="Reload Page" owner="SeleniumLibrary">
+<doc>Simulates user reloading page.</doc>
+<status status="PASS" start="2026-05-12T23:56:26.603438" elapsed="0.118118"/>
+</kw>
+<arg>locked_out_user</arg>
+<arg>secret_sauce</arg>
+<arg>Epic sadface: Sorry, this user has been locked out.</arg>
+<status status="PASS" start="2026-05-12T23:56:25.790424" elapsed="0.931613"/>
+</kw>
+<kw name="Invalid Login Scenario">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-05-12T23:56:26.723539" level="INFO">Typing text 'problem_user' into text field 'id:user-name'.</msg>
+<arg>id:user-name</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-12T23:56:26.723280" elapsed="0.138459"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2026-05-12T23:56:26.863463" level="INFO">Typing password into text field 'id:password'.</msg>
+<msg time="2026-05-12T23:56:26.904673" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>id:password</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-12T23:56:26.863046" elapsed="0.093395"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-05-12T23:56:26.958112" level="INFO">Clicking button 'id:login-button'.</msg>
+<arg>id:login-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-12T23:56:26.957707" elapsed="0.075970"/>
+</kw>
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<msg time="2026-05-12T23:56:27.052443" level="INFO">Element 'xpath://h3[@data-test='error']' contains text 'Epic sadface: Username and password do not match any user in this service'.</msg>
+<arg>xpath://h3[@data-test='error']</arg>
+<arg>${error}</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="PASS" start="2026-05-12T23:56:27.035138" elapsed="0.017393"/>
+</kw>
+<kw name="Reload Page" owner="SeleniumLibrary">
+<doc>Simulates user reloading page.</doc>
+<status status="PASS" start="2026-05-12T23:56:27.053661" elapsed="0.065204"/>
+</kw>
+<arg>problem_user</arg>
+<arg>wrongpass</arg>
+<arg>Epic sadface: Username and password do not match any user in this service</arg>
+<status status="PASS" start="2026-05-12T23:56:26.722711" elapsed="0.396631"/>
+</kw>
+<kw name="Capture Failure Screenshot" owner="login_resources" type="TEARDOWN">
+<kw name="Run Keyword If Test Failed" owner="BuiltIn">
+<arg>Capture Page Screenshot</arg>
+<arg>failure_${TEST NAME}.png</arg>
+<doc>Runs the given keyword with the given arguments, if the test failed.</doc>
+<status status="PASS" start="2026-05-12T23:56:27.124232" elapsed="0.000600"/>
+</kw>
+<status status="PASS" start="2026-05-12T23:56:27.123611" elapsed="0.001512"/>
+</kw>
+<doc>Verify invalid login scenarios using multiple test data combinations.</doc>
+<tag>Regression</tag>
+<status status="PASS" start="2026-05-12T23:56:24.507751" elapsed="2.623851"/>
+</test>
+<kw name="Close Application" owner="login_resources" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-05-12T23:56:27.137654" elapsed="2.654235"/>
+</kw>
+<status status="PASS" start="2026-05-12T23:56:27.137347" elapsed="2.655070"/>
+</kw>
+<status status="PASS" start="2026-05-12T23:56:21.098606" elapsed="8.694085"/>
+</suite>
+<suite id="s1-s2" name="Login Test" source="C:\Wipro Training\Python\PythonCoding\daily_assignments\RobotProject\tests\login_test.robot">
+<kw name="Open Application" owner="login_resources" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-05-12T23:56:29.800231" level="INFO">Opening browser 'edge' to base url 'https://www.saucedemo.com'.</msg>
+<msg time="2026-05-12T23:56:29.972900" level="WARN">There was an error managing MicrosoftEdge (error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_148_WINDOWS): error trying to connect: dns error: No such host is known. (os error 11001)); using driver found in the cache</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-05-12T23:56:29.799983" elapsed="2.839975"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-05-12T23:56:32.641097" elapsed="0.134180"/>
+</kw>
+<status status="PASS" start="2026-05-12T23:56:29.799706" elapsed="2.976124"/>
+</kw>
+<test id="s1-s2-t1" name="Valid Login Test" line="36">
+<kw name="Login To Application" owner="login_resources">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-05-12T23:56:32.781691" level="INFO">Typing text 'standard_user' into text field 'id:user-name'.</msg>
+<arg>${USERNAME_FIELD}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-12T23:56:32.781335" elapsed="0.441491"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2026-05-12T23:56:33.224519" level="INFO">Typing password into text field 'id:password'.</msg>
+<msg time="2026-05-12T23:56:33.362908" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>${PASSWORD_FIELD}</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-12T23:56:33.224084" elapsed="0.275733"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-05-12T23:56:33.501471" level="INFO">Clicking button 'id:login-button'.</msg>
+<arg>${LOGIN_BUTTON}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-12T23:56:33.501108" elapsed="0.297660"/>
+</kw>
+<arg>standard_user</arg>
+<arg>secret_sauce</arg>
+<status status="PASS" start="2026-05-12T23:56:32.780837" elapsed="1.019246"/>
+</kw>
+<kw name="Verify Login Success" owner="login_resources">
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2026-05-12T23:56:33.895953" level="INFO">Element 'xpath://span[text()='Products']' is displayed.</msg>
+<arg>${PRODUCT_TITLE}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2026-05-12T23:56:33.813404" elapsed="0.082713"/>
+</kw>
+<status status="PASS" start="2026-05-12T23:56:33.812813" elapsed="0.084524"/>
+</kw>
+<kw name="Capture Failure Screenshot" owner="login_resources" type="TEARDOWN">
+<kw name="Run Keyword If Test Failed" owner="BuiltIn">
+<arg>Capture Page Screenshot</arg>
+<arg>failure_${TEST NAME}.png</arg>
+<doc>Runs the given keyword with the given arguments, if the test failed.</doc>
+<status status="PASS" start="2026-05-12T23:56:33.900671" elapsed="0.000467"/>
+</kw>
+<status status="PASS" start="2026-05-12T23:56:33.900176" elapsed="0.001186"/>
+</kw>
+<doc>Verify successful login functionality using valid credentials.</doc>
+<tag>Critical</tag>
+<tag>Smoke</tag>
+<status status="PASS" start="2026-05-12T23:56:32.776156" elapsed="1.127451"/>
+</test>
+<kw name="Close Application" owner="login_resources" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-05-12T23:56:33.909614" elapsed="3.447726"/>
+</kw>
+<status status="PASS" start="2026-05-12T23:56:33.909332" elapsed="3.448296"/>
+</kw>
+<status status="PASS" start="2026-05-12T23:56:29.796741" elapsed="7.561036"/>
+</suite>
+<suite id="s1-s3" name="Product Test" source="C:\Wipro Training\Python\PythonCoding\daily_assignments\RobotProject\tests\product_test.robot">
+<kw name="Open Application" owner="login_resources" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-05-12T23:56:37.367244" level="INFO">Opening browser 'edge' to base url 'https://www.saucedemo.com'.</msg>
+<msg time="2026-05-12T23:56:37.551935" level="WARN">There was an error managing MicrosoftEdge (error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_148_WINDOWS): error trying to connect: dns error: No such host is known. (os error 11001)); using driver found in the cache</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-05-12T23:56:37.366994" elapsed="2.579412"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-05-12T23:56:39.947705" elapsed="0.093919"/>
+</kw>
+<status status="PASS" start="2026-05-12T23:56:37.366692" elapsed="2.675322"/>
+</kw>
+<test id="s1-s3-t1" name="Verify Product Total" line="9">
+<kw name="Login To Application" owner="login_resources">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-05-12T23:56:40.048064" level="INFO">Typing text 'standard_user' into text field 'id:user-name'.</msg>
+<arg>${USERNAME_FIELD}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-12T23:56:40.047643" elapsed="0.440986"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2026-05-12T23:56:40.490241" level="INFO">Typing password into text field 'id:password'.</msg>
+<msg time="2026-05-12T23:56:40.531416" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>${PASSWORD_FIELD}</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-12T23:56:40.489797" elapsed="0.155028"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-05-12T23:56:40.646627" level="INFO">Clicking button 'id:login-button'.</msg>
+<arg>${LOGIN_BUTTON}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-12T23:56:40.646231" elapsed="0.232900"/>
+</kw>
+<arg>standard_user</arg>
+<arg>secret_sauce</arg>
+<status status="PASS" start="2026-05-12T23:56:40.047145" elapsed="0.833384"/>
+</kw>
+<kw name="Get Product Price By Name" owner="ProductPage">
+<msg time="2026-05-12T23:56:40.962955" level="INFO">${price1} = 29.99</msg>
+<var>${price1}</var>
+<arg>Sauce Labs Backpack</arg>
+<status status="PASS" start="2026-05-12T23:56:40.881604" elapsed="0.081440"/>
+</kw>
+<kw name="Get Product Price By Name" owner="ProductPage">
+<msg time="2026-05-12T23:56:41.018797" level="INFO">${price2} = 9.99</msg>
+<var>${price2}</var>
+<arg>Sauce Labs Bike Light</arg>
+<status status="PASS" start="2026-05-12T23:56:40.966015" elapsed="0.052901"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2026-05-12T23:56:41.021762" level="INFO">${total} = 39.98</msg>
+<var>${total}</var>
+<arg>${price1}+${price2}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2026-05-12T23:56:41.021052" elapsed="0.000772"/>
+</kw>
+<kw name="Should Be Equal As Numbers" owner="BuiltIn">
+<msg time="2026-05-12T23:56:41.023607" level="INFO">Argument types are:
+&lt;class 'float'&gt;
+&lt;class 'str'&gt;</msg>
+<arg>${total}</arg>
+<arg>39.98</arg>
+<doc>Fails if objects are unequal after converting them to real numbers.</doc>
+<status status="PASS" start="2026-05-12T23:56:41.023171" elapsed="0.000563"/>
+</kw>
+<status status="PASS" start="2026-05-12T23:56:40.042331" elapsed="0.983254"/>
+</test>
+<kw name="Close Application" owner="login_resources" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-05-12T23:56:41.032449" elapsed="3.364897"/>
+</kw>
+<status status="PASS" start="2026-05-12T23:56:41.029765" elapsed="3.367889"/>
+</kw>
+<status status="PASS" start="2026-05-12T23:56:37.362009" elapsed="7.035792"/>
+</suite>
+<status status="PASS" start="2026-05-12T23:56:21.072105" elapsed="23.329437"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">Critical</stat>
+<stat pass="1" fail="0" skip="0">Regression</stat>
+<stat pass="1" fail="0" skip="0">Smoke</stat>
+</tag>
+<suite>
+<stat name="Tests" id="s1" pass="3" fail="0" skip="0">Tests</stat>
+<stat name="Invalid Login Test" id="s1-s1" pass="1" fail="0" skip="0">Tests.Invalid Login Test</stat>
+<stat name="Login Test" id="s1-s2" pass="1" fail="0" skip="0">Tests.Login Test</stat>
+<stat name="Product Test" id="s1-s3" pass="1" fail="0" skip="0">Tests.Product Test</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2026-05-12T23:56:21.492562" level="WARN">There was an error managing MicrosoftEdge (error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_148_WINDOWS): error trying to connect: dns error: No such host is known. (os error 11001)); using driver found in the cache</msg>
+<msg time="2026-05-12T23:56:29.972900" level="WARN">There was an error managing MicrosoftEdge (error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_148_WINDOWS): error trying to connect: dns error: No such host is known. (os error 11001)); using driver found in the cache</msg>
+<msg time="2026-05-12T23:56:37.551935" level="WARN">There was an error managing MicrosoftEdge (error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_148_WINDOWS): error trying to connect: dns error: No such host is known. (os error 11001)); using driver found in the cache</msg>
+</errors>
+</robot>
