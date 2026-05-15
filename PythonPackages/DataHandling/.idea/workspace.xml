@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cefce93e-f60b-448f-b427-50b99369b5f2" name="Changes" comment="" />
+    <list default="true" id="cefce93e-f60b-448f-b427-50b99369b5f2" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PythonModules/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PythonModules/.idea/misc.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,10 +40,15 @@
     "Python.data_manipulation.executor": "Run",
     "Python.mathematical_fns.executor": "Run",
     "Python.numpy_basics.executor": "Run",
+    "Python.t4.executor": "Run",
+    "Python.threading.executor": "Run",
+    "Python.threading2.executor": "Run",
+    "Python.threading3.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master"
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Wipro Training/Python/PythonPackages/DataHandling"
   }
 }]]></component>
   <component name="SharedIndexes">
